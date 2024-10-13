@@ -1,12 +1,7 @@
 
 import itertools
-
-try:
-    from io import BytesIO
-    binary_type = bytes
-except:
-    from StringIO import StringIO as BytesIO
-    binary_type = str
+from io import StringIO as BytesIO
+binary_type = str
 
 from compileengine.variable import Variable
 
